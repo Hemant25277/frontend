@@ -8,7 +8,6 @@ import PredictionForm from "@/components/PredictionForm";
 import PredictionResult from "@/components/PredictionResult";
 import CandidateHistory from "@/components/CandidateHistory";
 import AnalyticsDashboard from "@/components/AnalyticsDashboard";
-import InteractiveShowcase from "@/components/InteractiveShowcase";
 import ExploreMenu from "@/components/ExploreMenu";
 import Footer from "@/components/Footer";
 
@@ -33,7 +32,6 @@ export default function Home() {
         <PredictionResult result={predictionResult} formData={formData} />
         <CandidateHistory />
         <AnalyticsDashboard />
-        <InteractiveShowcase />
         <ExploreMenu />
         <Footer />
       </div>

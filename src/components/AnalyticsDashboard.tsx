@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
-import Threads from "./Threads";
+
 
 // Animated counter component
 const AnimatedCounter = React.memo(function AnimatedCounter({ value, isPercentage = false }: { value: number, isPercentage?: boolean }) {
@@ -131,14 +131,8 @@ export default function AnalyticsDashboard() {
   return (
     <section className="relative z-20 bg-slate-900 py-32 px-4 border-t border-white/5 overflow-hidden">
       
-      {/* Background WebGL Threads Effect */}
-      <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen pointer-events-none md:pointer-events-auto">
-        <Threads 
-          amplitude={1.5} 
-          distance={0} 
-          enableMouseInteraction={true} 
-          color={[0.1, 0.4, 0.9]} 
-        />
+      {/* Static Background Alternative */}
+      <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen pointer-events-none bg-gradient-to-b from-blue-900/10 to-transparent">
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10 pointer-events-none">

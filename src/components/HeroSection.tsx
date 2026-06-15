@@ -55,17 +55,9 @@ export default function HeroSection() {
         </div>
       </header>
 
-      {/* Spline Fixed Background */}
-      <div className="fixed top-0 left-0 w-full h-screen z-0 pointer-events-auto">
-        {/* Heavy dark overlay to mask Spline text and blend */}
-        <div className="absolute inset-0 bg-slate-900/75 z-10 pointer-events-none" />
-        <iframe 
-          loading="lazy"
-          style={{ visibility: isInView ? 'visible' : 'hidden' }}
-          src="https://my.spline.design/theeternalarc-uK96TBmlPyBK12ZYsBobYDrV-16x/" 
-          className="w-full h-full border-none scale-[1.05]" 
-          title="AI Recruitment Spline Scene"
-        />
+      {/* Static Gradient Background */}
+      <div className="fixed top-0 left-0 w-full h-screen z-0 pointer-events-none bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')] opacity-20" />
       </div>
 
       {/* Sticky Text Container */}
